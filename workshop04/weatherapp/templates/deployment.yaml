@@ -30,7 +30,7 @@ spec:
             value: {{ default "Singapore" .Values.APP_DEFAULT_CITY }}
           ports:
             - name: http
-              containerPort: 80
+              containerPort: {{ .Values.deployment.containerPort }}
               protocol: TCP
           livenessProbe:
             httpGet:

@@ -13,9 +13,15 @@ service:
   port: 80
   targetPort: 3000
 
-APP_ID: ecbd92ff90840c3a36dad8d16f7f7fb2
+deployment:
+  containerPort: 3000
+
+APP_ID: 8a81d247d650cb16469c4ba3ceb7d265
 
 productionEnv: true
 productionReplicaCount: 2
 
 APP_DEFAULT_CITY: Japan
+
+gatewayhostname: "jp.157.230.73.86.nip.io"
+gatewayport: 80
