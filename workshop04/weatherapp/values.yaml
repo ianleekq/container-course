@@ -17,3 +17,5 @@ APP_ID: ecbd92ff90840c3a36dad8d16f7f7fb2
 
 productionEnv: true
 productionReplicaCount: 2
+
+APP_DEFAULT_CITY: Japan

@@ -26,6 +26,8 @@ spec:
           env:
           - name: APP_ID
             value: {{ .Values.APP_ID }}
+          - name: APP_DEFAULT_CITY
+            value: {{ default "Singapore" .Values.APP_DEFAULT_CITY }}
           ports:
             - name: http
               containerPort: 80
